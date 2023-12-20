@@ -70,6 +70,7 @@ func main() {
 
 	mux := http.NewServeMux()
 
+	fmt.Printf("The answer is %s\n" the_answer)
 	// routes
 	mux.HandleFunc("/api", receiveJSONHandler)
 	mux.Handle("/", staticFs)
